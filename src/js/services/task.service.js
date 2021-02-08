@@ -4,9 +4,9 @@ const taskRef = firebase.firestore().collection('tasks');
 
 const getUser = () => {
   const user = firebase.auth().currentUser;
-  if(!user) {
-    throw alert('You are not logged in!');
-  }
+  // if(!user) {
+  //   throw alert('You are not logged in!');
+  // }
   return user;
 }
 
@@ -25,7 +25,6 @@ const addTask = task => {
 }
 
 const resolveTask = taskId => {
-  console.log({taskId});
   
   return firebase.firestore().runTransaction(txn => {
     const currentTaskRef = taskRef.doc(taskId);
