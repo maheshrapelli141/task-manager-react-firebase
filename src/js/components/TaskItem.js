@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 import { toggleTask } from '../actions/tasks.actions';
 import { getDaysFromNow } from '../util/DateUtil';
+import tasksService from '../services/task.service';
 
 const isAlmostDue = dueDate => {
   const daysBetween = getDaysFromNow(dueDate);
@@ -45,15 +46,20 @@ export const TaskItem = ({
         </div>
         <div className="card-footer text-center">
           <button
+            disabled={resolved}
             className={classNames('btn btn-block', {
               'btn-primary': !resolved,
               'btn-warning': resolved
             })}
             onClick={() => {
-              dispatch(toggleTask(id));
+              tasksService.resolveTask(id).then(res => {
+                console.log({res});
+                dispatch(toggleTask(id));
+              })
+              .catch(err => console.log(err));
             }}
           >
-            {!resolved ? 'Resolve' : 'Reopen'}
+            {!resolved ? 'Resolve' : 'Resolved'}
           </button>
           <small className="text-muted">Created on {createdDate}</small>
         </div>

@@ -5,6 +5,7 @@
   "parser": "babel-eslint",
   "rules": {
     "react/prop-types": "off",
+    "no-console": "off",
     "max-len": [1, 120, 2, { "ignoreComments": true }],
     "import/no-extraneous-dependencies": "off",
     "import/no-named-as-default": "off",

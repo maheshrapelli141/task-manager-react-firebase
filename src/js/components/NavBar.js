@@ -31,7 +31,7 @@ const NavBar = props => (
           </ul>
         :
           <ul className="navbar-nav mr-auto">
-            <button type="button" className="btn btn-primary btn-right" onClick={login}  >Login</button>
+            <button type="button" className="btn btn-primary btn-right" onClick={login}  >Login with Google</button>
           </ul>
       }
 

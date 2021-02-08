@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { addTask } from '../actions/tasks.actions';
 import { toDateString } from '../util/DateUtil';
+import tasksService from '../services/task.service';
 
 const initialState = {
   name: '',
@@ -29,8 +30,14 @@ export class TaskForm extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
-    this.props.addTask(this.state);
-    this.setState(initialState);
+
+    tasksService.addTask(this.state).then(res => {
+      console.log({res});
+      this.props.addTask(this.state);
+      this.setState(initialState);
+    }).catch(err => {
+      console.log({err});
+    })
   }
 
   isValidForm() {

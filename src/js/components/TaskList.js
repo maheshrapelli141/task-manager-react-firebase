@@ -3,12 +3,35 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import TaskItem from './TaskItem';
+import {loadTasks} from '../actions/tasks.actions';
+import tasksService  from '../services/task.service';
+import { toDateString } from '../util/DateUtil';
 
 export class TaskList extends Component {
   constructor(props) {
     super(props);
 
     this.props.tasks;
+  }
+
+  componentDidMount(){
+    this.getAllTasks();
+  }
+
+  getAllTasks(){
+    tasksService.getAllTasks().then(tasks => {
+      const data = tasks.docs.map(task => {
+        const data = task.data();
+        return {
+          ...data,
+          id: task.id,
+          createdDate: toDateString(data.createdDate.seconds * 1000)
+        };
+      });
+
+      console.log(data.map(tsk => tsk.createdDate));
+      this.props.dispatch(loadTasks(data));
+    });
   }
 
   render() {

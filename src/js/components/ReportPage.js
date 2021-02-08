@@ -61,7 +61,7 @@ export class ReportPage extends Component {
     const { tasks } = this.props;
     const taskCategories = this.getTaskCategories();
     return tasks.reduce((accumulator, task) => {
-      if (!task.resolved && this.isAlmostDue(task.dueDate)) {
+      if (this.isAlmostDue(task.dueDate)) {
         // update category count
         const categoryIndex = taskCategories.indexOf(task.category);
         accumulator[categoryIndex] = ++accumulator[categoryIndex] || 1;
