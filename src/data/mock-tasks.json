@@ -1,0 +1,52 @@
+[
+  {
+    "id": "fb78e762-d7f4-4b51-974b-2c790604de6a",
+    "category": "Personal care",
+    "name": "Trim hair",
+    "description": "",
+    "createdDate": "2018-06-14",
+    "reminderDate": "",
+    "dueDate": "2018-06-16",
+    "resolved": true
+  },
+  {
+    "id": "5e2971a1-ac39-47e8-b6ee-8dcb56641c05",
+    "category": "House chores",
+    "name": "Clean dishes",
+    "description": "the sink is full!",
+    "createdDate": "2018-06-15",
+    "reminderDate": "",
+    "dueDate": "2018-06-16",
+    "resolved": false
+  },
+  {
+    "id": "7d56b849-aa89-4a8a-a395-8a266f19e241",
+    "category": "Shopping",
+    "name": "Grocery shopping",
+    "description": "- milk\n- fruits\n- toilet rolls",
+    "createdDate": "2018-06-17",
+    "reminderDate": "2018-06-20",
+    "dueDate": "2018-06-20",
+    "resolved": true
+  },
+  {
+    "id": "38b1d949-e7f5-43b2-b4db-76458e65b70d",
+    "category": "House chores",
+    "name": "Vacuum the floor",
+    "description": "remember to charge the vacuum a day before",
+    "createdDate": "2018-06-17",
+    "reminderDate": "2018-06-22",
+    "dueDate": "2018-06-23",
+    "resolved": true
+  },
+  {
+    "id": "161f644f-7f81-4ac7-8f05-4f8e99acad12",
+    "category": "Shopping",
+    "name": "Birthday gift for mum",
+    "description": "",
+    "createdDate": "2018-06-17",
+    "reminderDate": "",
+    "dueDate": "2018-09-08",
+    "resolved": true
+  }
+]

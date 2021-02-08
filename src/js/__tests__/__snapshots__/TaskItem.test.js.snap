@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskItem component should render correctly 1`] = `
+<TaskItem
+  category="a category"
+  createdDate="2018-01-01"
+  description="lorem ipsum"
+  dispatch={[MockFunction]}
+  dueDate="2018-01-09"
+  id="1"
+  name="some task"
+  reminderDate="2018-01-01"
+  resolved={false}
+>
+  <div
+    className="col-12 col-md-4"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card-header"
+      >
+        a category
+      </div>
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+          some task
+        </h5>
+        <h6
+          className="card-subtitle mb-2 text-muted"
+        >
+          Due on 
+          2018-01-09
+        </h6>
+        <p
+          className="card-text"
+        >
+          lorem ipsum
+        </p>
+      </div>
+      <div
+        className="card-footer text-center"
+      >
+        <button
+          className="btn btn-block btn-primary"
+          onClick={[Function]}
+        >
+          Resolve
+        </button>
+        <small
+          className="text-muted"
+        >
+          Created on 
+          2018-01-01
+        </small>
+      </div>
+    </div>
+  </div>
+</TaskItem>
+`;

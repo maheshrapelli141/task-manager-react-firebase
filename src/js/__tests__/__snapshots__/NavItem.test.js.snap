@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavItem component should render correctly 1`] = `
+<li
+  className="nav-item"
+>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="nav-link"
+    to="/test-path"
+  >
+    Test Label
+  </NavLink>
+</li>
+`;

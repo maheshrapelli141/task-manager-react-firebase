@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskList component should render empty state when tasks is empty 1`] = `
+<TaskList
+  tasks={Array []}
+>
+  <section
+    className="row"
+    id="taskList"
+  >
+    <div
+      className="col-12"
+    >
+      <div
+        className="alert alert-info"
+        role="alert"
+      >
+        Task list is empty, please add a task!
+      </div>
+    </div>
+  </section>
+</TaskList>
+`;
+
+exports[`TaskList component should render tasks 1`] = `
+<TaskList
+  tasks={
+    Array [
+      Object {
+        "category": "Cat A",
+        "createDate": "2018-01-01",
+        "description": "lorem ipsum",
+        "dueDate": "2018-01-01",
+        "id": "123",
+        "name": "Some task",
+        "reminderDate": "2018-01-01",
+        "resolved": true,
+      },
+    ]
+  }
+>
+  <section
+    className="row"
+    id="taskList"
+  >
+    <TaskItem
+      category="Cat A"
+      createDate="2018-01-01"
+      description="lorem ipsum"
+      dueDate="2018-01-01"
+      id="123"
+      index={0}
+      key="123"
+      name="Some task"
+      reminderDate="2018-01-01"
+      resolved={true}
+    >
+      <div />
+    </TaskItem>
+  </section>
+</TaskList>
+`;

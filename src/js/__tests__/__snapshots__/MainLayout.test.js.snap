@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main layout component should render correctly 1`] = `
+<HashRouter
+  hashType="noslash"
+>
+  <div
+    className="container"
+  >
+    <NavBar />
+    <main>
+      <div
+        className="card"
+      >
+        <div
+          className="card-body"
+        >
+          <MainRoutes />
+        </div>
+      </div>
+    </main>
+  </div>
+</HashRouter>
+`;

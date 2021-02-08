@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jumbotron component should render correctly 1`] = `
+<div
+  className="jumbotron jumbotron-fluid"
+>
+  <div
+    className="container"
+  >
+    Sample Header
+  </div>
+</div>
+`;

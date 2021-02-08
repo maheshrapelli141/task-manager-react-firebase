@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskForm component should render correctly 1`] = `
+<TaskForm
+  addTask={[MockFunction]}
+>
+  <section>
+    <div
+      className="card"
+    >
+      <div
+        className="card-body"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="form-group required"
+          >
+            <label
+              htmlFor="name"
+            >
+              Name
+            </label>
+            <input
+              className="form-control"
+              id="name"
+              onChange={[Function]}
+              required={true}
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group required"
+          >
+            <label
+              htmlFor="name"
+            >
+              Category
+            </label>
+            <input
+              className="form-control"
+              id="category"
+              onChange={[Function]}
+              required={true}
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group required"
+          >
+            <label
+              htmlFor="dueDate"
+            >
+              Due date
+            </label>
+            <input
+              className="form-control"
+              id="dueDate"
+              min="2018-01-01"
+              onChange={[Function]}
+              required={true}
+              type="date"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="reminderDate"
+            >
+              Reminder date
+            </label>
+            <input
+              className="form-control"
+              id="reminderDate"
+              min="2018-01-01"
+              onChange={[Function]}
+              type="date"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              className="bmd-label-floating"
+              htmlFor="description"
+            >
+              Description
+            </label>
+            <textarea
+              className="form-control"
+              id="description"
+              onChange={[Function]}
+              rows="3"
+              value=""
+            />
+          </div>
+          <button
+            className="btn btn-primary btn-lg btn-block btn-raised"
+            disabled={true}
+            type="submit"
+          >
+            Add Task
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</TaskForm>
+`;
