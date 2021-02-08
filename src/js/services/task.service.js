@@ -2,13 +2,21 @@ import {firebase} from '../util/firebase';
 
 const taskRef = firebase.firestore().collection('tasks');
 
-const getAllTasks = () => {
+const getUser = () => {
   const user = firebase.auth().currentUser;
+  if(!user) {
+    throw alert('You are not logged in!');
+  }
+  return user;
+}
+
+const getAllTasks = () => {
+  const user = getUser();
   return taskRef.where('user','==',user.uid).get();
 }
 
 const addTask = task => {
-  const user = firebase.auth().currentUser;
+  const user = getUser();
   return taskRef.add({
     ...task,
     user: user.uid,
