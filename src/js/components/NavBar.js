@@ -10,7 +10,7 @@ const logout = () => { auth.signOut() }
 const NavBar = props => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
     <a className="navbar-brand" href="#">
-      Navbar
+      Task Manager
     </a>
     <button
       className="navbar-toggler"
